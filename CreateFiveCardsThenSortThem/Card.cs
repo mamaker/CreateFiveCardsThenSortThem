@@ -15,9 +15,15 @@ namespace CreateFiveCardsThenSortThem
             this.Suit = suit;
             this.Value = value;
         }
+
         public string Name
         {
             get { return Value.ToString() + " of " + Suit.ToString(); }
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }
